@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>Event Countdown</h1>
+        </div>
+    </header>
+    <main>
+        <!-- Event Date Form -->
+        <section class="formBox">
+            <h2>Select An Event Date:</h2>
+            <form id="timerForm" action="#">
+                <label for="date"></label>
+                <input type="date" id="dateForm" name="date" required>
+                <button id="submit">Set Date</button>
+            </form>
+        </section>
+        <!-- Timer -->
+        <section class="timerBox">
+            <h2 id="eventName">Your Event Is In:</h2>
+            <p id="timer"></p>
+        </section>
+    </main>
+    <!-- load in jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- load in script -->
+    <script src="script.js"></script>
+</body>
+</html>
